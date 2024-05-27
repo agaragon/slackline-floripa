@@ -10,7 +10,7 @@ const Classes: React.FC = () => {
             <TeacherContainer>
                 {TeacherDescriptions.map((teacher) => {
                     return <>
-                        <h1>{teacher.name}</h1>
+                        <TeacherName>{teacher.name}</TeacherName>
                         <Image src={teacher.image} alt={teacher.alt} />
                         <TeacherDescription>
                             {teacher.description}
