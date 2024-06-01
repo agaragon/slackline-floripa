@@ -8,7 +8,6 @@ const Home: React.FC = () => {
   
   return (
     <Page>
-      {/* <Header>Welcome to Slackline World</Header> */}
       <Header>Bem vindo a Slackline Floripa!</Header>
       <Content>
         <Image src="https://cdn.midjourney.com/bf20295d-d27e-45a3-81ff-9be1bb17a558/0_3.png" alt="Slackline" />

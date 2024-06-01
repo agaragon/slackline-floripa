@@ -6,7 +6,6 @@ const LearnMore: React.FC = () => {
   
   return (
     <Page>
-      {/* <Header>When was it created?</Header> */}
       <Header>Quando foi criado?</Header>
       <Content>
         O slackline foi criado na década de 1980 por escaladores em Yosemite Valley, Califórnia. Eles costumavam montar uma linha entre duas árvores e andar nela para relaxar e se divertir.
