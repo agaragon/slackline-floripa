@@ -45,3 +45,12 @@ export const Button = styled.button`
     background-color: #3700b3;
   }
 `;
+
+export const Title = styled.h2``
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+`
