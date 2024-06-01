@@ -1,7 +1,6 @@
 import React from 'react';
-import { TeacherContainer, TeachersContainer, TeacherName, TeacherDescription, Image, Container } from './styles';
+import { TeacherContainer, TeachersContainer, TeacherName, TeacherDescription, Image, Container, Contact } from './styles';
 import { TeacherDescriptions } from './teacherDescriptions';
-
 
 const Classes: React.FC = () => {
   return (
@@ -15,6 +14,7 @@ const Classes: React.FC = () => {
                         <TeacherDescription>
                             {teacher.description}
                         </TeacherDescription>
+                        <Contact href={teacher.contact}>{teacher.contactText}</Contact>
                     </>
                 })}
             </TeacherContainer>

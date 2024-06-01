@@ -1,27 +1,29 @@
 import React from 'react';
 import useNavigationService from '../../services/navigate-service';
-// import { useNavigate } from 'react-router-dom';
-import { Button, Container, Content, Header, Image, Text, Title, ButtonsContainer } from './styles';
+import { Button, Content, Header, Image, Text, Title, ButtonsContainer } from './styles';
+import { Page } from '../../components/page';
 
 const Home: React.FC = () => {
   const { goToClasses, goToLearnMore } = useNavigationService();
   
   return (
-    <Container>
-      <Header>Welcome to Slackline World</Header>
+    <Page>
+      {/* <Header>Welcome to Slackline World</Header> */}
+      <Header>Bem vindo a Slackline Floripa!</Header>
       <Content>
         <Image src="https://cdn.midjourney.com/bf20295d-d27e-45a3-81ff-9be1bb17a558/0_3.png" alt="Slackline" />
-          <Title>What is Slackline?</Title>
+          <Title>O que é slackline?</Title>
           <Text>
-            Slacklining is a balance sport that uses a flat webbing tensioned between two anchors. 
-            It’s a great way to improve your balance, focus, and core strength while having fun outdoors.
+            Slackline é um esporte de equilíbrio que envolve andar ou balançar em uma fita esticada entre dois pontos fixos. 
+            É semelhante ao slack rope walking e ao tightrope walking. 
+            A fita é tensionada entre dois pontos fixos, geralmente árvores ou postes, mas também pode ser esticada entre dois pontos fixos no chão.
           </Text>
         <ButtonsContainer>
-          <Button onClick={goToLearnMore}>Learn More!</Button>
-          <Button onClick={goToClasses}>Get Classes!</Button>
+          <Button onClick={goToLearnMore}>Saiba Mais!</Button>
+          <Button onClick={goToClasses}>Tenha aulas!</Button>
         </ButtonsContainer>
       </Content>
-    </Container>
+    </Page>
   );
 };
 

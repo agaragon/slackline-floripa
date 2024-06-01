@@ -38,3 +38,5 @@ export const Image = styled.img`
 export const TeacherDescription = styled.p``
 
 export const TeacherName = styled.h1``
+
+export const Contact = styled.a``
